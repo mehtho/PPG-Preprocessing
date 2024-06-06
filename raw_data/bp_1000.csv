@@ -1,0 +1,7 @@
+"Measurement Date","Timezone","SYS(mmHg)","DIA(mmHg)","Pulse(bpm)","Irregular heartbeat detected","IHB detection counts(times)","Body Movement","Cuff wrap guide","Positioning Indicator","room temperature(°C)","Measurement Mode","Device"
+"2024/01/08 16:31","Asia/Singapore","145","92","90","","","Not Detected","OK","","","","Complete(HEM-7530T)"
+"2024/01/08 16:36","Asia/Singapore","131","87","84","","","Not Detected","OK","","","","Complete(HEM-7530T)"
+"2024/01/08 16:43","Asia/Singapore","138","84","88","","","Not Detected","OK","","","","Complete(HEM-7530T)"
+"2024/01/08 16:50","Asia/Singapore","132","93","81","","","Not Detected","OK","","","","Complete(HEM-7530T)"
+"2024/01/08 16:57","Asia/Singapore","137","88","73","","","Not Detected","OK","","","","Complete(HEM-7530T)"
+"2024/01/08 17:10","Asia/Singapore","133","95","87","","","Not Detected","OK","","","","Complete(HEM-7530T)"
