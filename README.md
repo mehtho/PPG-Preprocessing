@@ -7,6 +7,7 @@ This repository contains example code used for preprocessing the WF-PPG dataset.
 - `processed/`: Output directory
 - `raw_data/`: Raw data files from each device used in the data collection experiment.
 - `process.ipynb`: Main notebook for data preprocessing. The notes within document the dataset's preprocessing procedure.
+- `p-analysis.ipynb`: Notebook for pressure analysis, result in figures in the paper.
 - `classify.py`: A specific file for the classification method described in the paper.
 
 ## Contact

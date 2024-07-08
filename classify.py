@@ -41,10 +41,9 @@ def classify(sig):
             # And it is not too far down or up
             p2, _ = signal.find_peaks(-sig)
             notch_peaks = [p for p in p2 \
-                           if p < peaks[1] \
-                           and p > peaks[0] \
-                           and sig[p] < sig[peaks[1]]]
-            
+                if p < peaks[1] \
+                and p > peaks[0] \
+                and sig[p] < sig[peaks[1]]]
 
             # Exclude the edges, because they are typically not important and may have small bumps
             ps, _ = signal.find_peaks(sig[10:85])
@@ -82,9 +81,9 @@ def classify(sig):
             
             # Identify the notch between the two peaks
             notch_peaks = [p for p in nps \
-               if p < peaks[1] \
-               and p > peaks[0] \
-               and sig[p] < sig[peaks[1]]]
+                if p < peaks[1] \
+                and p > peaks[0] \
+                and sig[p] < sig[peaks[1]]]
 
             # If there are many peaks, more than 1 notch, or the notch is lower than normal, reject    
             if len(ps) >= 3 \
