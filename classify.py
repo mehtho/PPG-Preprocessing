@@ -1,22 +1,22 @@
+from scipy import signal 
+
+
 def butter_lowpass(cutoff, fs, order=5):
-    from scipy import signal
     nyq = 0.5 * fs
     normal_cutoff = cutoff / nyq
     b, a = signal.butter(order, normal_cutoff, btype='low', analog=False)
     return b, a
 
+
 def butter_lowpass_filter(data, fs, cutoff, order=5):
-    from scipy import signal
     b, a = butter_lowpass(cutoff, fs, order=order)
     y = signal.filtfilt(b, a, data)
     return y
 
+
 def classify(sig):   
-    from scipy import signal
     sig = sig.copy()/max(sig)
-    
     prom = 0.004
-    
     if min(sig) < -0.3:
         return '3'
     
